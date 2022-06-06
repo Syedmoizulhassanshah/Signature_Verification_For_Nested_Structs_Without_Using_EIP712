@@ -21,9 +21,7 @@ Node.js v16.13.2 or later
 
 ### Steps
 
-1. Here, we are using **web3.js library** for creating off-chain signature.Use the following command to install **web3**
-
-`npm install web3`
+1. Here, we are using **web3.js library** for creating off-chain signature.Use the following command to install **web3** `npm install web3`
 
 2. Then we are using `web3.eth.abi.encodeParameter()` method for encoding our struct-type data before hashing it.This method returns a **hexString** as an output. 
 
