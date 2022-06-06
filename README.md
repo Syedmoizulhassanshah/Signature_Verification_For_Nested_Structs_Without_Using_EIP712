@@ -12,10 +12,6 @@
 4. Then call the mintSingleLand() Function by passing the mintdata **tuple** and the **signature** (value) you created off-chain.
 5. **Result:** Token is minted now.
 
-# Setting up environment for blockchain development  
-
-**Note:** The instructions given below are for Ubuntu 20.04 LTS (users only).
-
 
 ## Off-Chain
 
