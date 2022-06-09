@@ -5,7 +5,7 @@
 ## Steps to run the project
 
 1. Clone the repository.
-2. Install the dependencies using the following command `npm i`
+2. Install the dependencies using the following command `npm i` and `npm install dotenv --save`
 3. Create a `.env` file in the project folder and add your `PRIVATEKEY`  in it. 
 4. Run the signature creation scripts present in the script folder (**replace the private key with your wallet's privateKey,
    just make sure the privateKey of the wallet which you provide has fake testnet ethers in it and not the mainnet one.**).
