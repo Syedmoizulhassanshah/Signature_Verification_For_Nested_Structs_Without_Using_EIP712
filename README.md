@@ -1,11 +1,11 @@
-# Signature_Verification_For_Nested_Structs_Without_Using_EIP712
+# Signature_Verification_Without_Using_EIP712
  
 **Note:** The instructions given below are for Ubuntu 20.04 LTS (users only).
 
 ## Steps to run the project
 
 1. Clone the repository.
-2. Install the dependencies using the following command `npm i` and `npm install dotenv --save`
+2. Install the dependencies using the following command `npm i` and `npm install dotenv`
 3. Create a `.env` file in the project folder and add your `PRIVATEKEY`  in it. 
 4. Run the signature creation scripts present in the script folder (**replace the private key with your wallet's privateKey,
    just make sure the privateKey of the wallet which you provide has fake testnet ethers in it and not the mainnet one.**).
@@ -42,7 +42,7 @@ Node.js v16.13.2 or later
 
 3. Then we call  `mintSingleLand()` method by passing mintData **tuple** and **signature** that we created off-chain.
 
-4. The mintData **tuple** that we pass into 'mintSingleLand()' method is first encoded using `abi.encode()` , then hashed with `keccak256()` and passed into `verifyOwnerSignature()` method along with the signature.
+4. The mintData **tuple** that we pass into `mintSingleLand()` method is first encoded using `abi.encode()` , then hashed with `keccak256()` and passed into `verifyOwnerSignature()` method along with the signature.
 
 5. The `verifyOwnerSignature()` takes the **hash** of the mintData **tuple** along with signature, this **hash** of the mintData **tuple** is passed into the `toEthSignedMessageHash()` method present in ECDSA library.`toEthSignedMessageHash()` method returns an **Ethereum Signed Message** which is also `bytes32` type **hash**.
 
