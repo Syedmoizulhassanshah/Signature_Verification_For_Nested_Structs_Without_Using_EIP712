@@ -7,9 +7,9 @@
 1. Clone the repository.
 2. Install the dependencies using the following command `npm i` and `npm install dotenv --save`
 3. Create a `.env` file in the project folder and add your `PRIVATEKEY`  in it. 
-4. Run the signature creation scripts present in the script folder (**replace the private key with your wallet's privateKey,
-   just make sure the privateKey of the wallet which you provide has fake testnet ethers in it and not the mainnet one.**).
-5. Copy the land contract present in the contracts folder and deploy it on remix using your wallet address whose privatekey you used for creating signature off-chain. 
+4. Run the signature creation scripts present in the script folder.
+5. Copy the land contract present in the contracts folder and deploy it on remix using your wallet address whose privatekey you used for creating  
+   signature off-chain. 
 6. SetmintedEnabled Value to `true`.
 7. Then call the `mintSingleLand()` function by passing the mintData **tuple** and the **signature** (value) you created off-chain.
 8. **Result:** token gets minted now.
